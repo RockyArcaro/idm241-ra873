@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color:black;
+        }
+        .container{
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: .3s ease;
+            cursor: pointer;
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        #playbutton{
+            width:300px;
+            position: absolute;
+            align-self: center;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        #infobutton{
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 120px;
+        }
+        #playbutton:active{
+            width:20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="Pictures/WorkingInteraction.png">
+            <div class="overlay">
+
+                <img src="Pictures/playbutton.png" id="playbutton">
+                <img src="Pictures/infobutton.png" id="infobutton">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
